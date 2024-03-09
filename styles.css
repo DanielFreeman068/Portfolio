@@ -1,0 +1,15 @@
+body{
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
+    color:white;
+    font-family:Georgia, Avenir and Avenir Light; 
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+.github{
+    color:#32de84;
+    font-weight:bold;
+}
