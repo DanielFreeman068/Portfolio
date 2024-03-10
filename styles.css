@@ -1,15 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
-    color:white;
     font-family:Georgia, Avenir and Avenir Light; 
 }
 
-.info{
-    display: grid;
-    grid-template-columns: repeat(1, auto);
+.topnav{
+    background-color:#100c08;
+    overflow:hidden;
+    padding-top:5px;
+}
+
+.topnav a{
+    float:left;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+
+.navbarImage{
+    height:40px;
+    width:auto;
+}
+
+.rightnav{
+    float:right;
+}
+
+a{
+    color:#fff;
+    border-radius:15px;
+}
+
+.rightnav a:hover{
+    background-color: lightslategray;
 }
 
 .github{
     color:#32de84;
     font-weight:bold;
+    font-size:20px;;
+    display:flex;
+    justify-content:center;
+    max-width:100px;
+    padding:20px;
+    position: absolute;
+    left:40%;
+}
+
+.github:hover{
+    background-color:#32de84;
+    color:white;
+}
+
+.textInfo{
+    position:absolute;
+    top:35%;
+    left:10%;
+    margin-right:200px;
+}
+
+.imageInfo{
+    position:absolute;
+    top:25%;
+    left:65%;
+}
+
+.textInfo h1{
+    font-size:75px;
+}
+
+.textInfo h2{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:20px;
 }
