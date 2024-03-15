@@ -1,6 +1,3 @@
-
-Sure, here's a basic template for a README file for your portfolio:
-
 Daniel Freeman's Portfolio
 Welcome to my portfolio! This repository contains a collection of projects and work samples that demonstrate my skills and experience as a front-end developer.
 
