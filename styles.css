@@ -4,78 +4,111 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family:Georgia, Avenir and Avenir Light; 
+body {
+    font-family: Georgia, Avenir, and Avenir Light;
+    background-image: url("whitebg.jpg");
+    margin: 0;
+    padding: 0;
 }
 
-.topnav{
-    background-color:#100c08;
-    overflow:hidden;
-    padding-top:5px;
+.topnav {
+    background-color: #100c08;
+    overflow: hidden;
+    padding-top: 5px;
 }
 
-.topnav a{
-    float:left;
-    text-align:center;
-    padding:14px 16px;
-    text-decoration:none;
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.navbarImage{
-    height:40px;
-    width:auto;
+.navbarImage {
+    height: 40px;
+    width: auto;
 }
 
-.rightnav{
-    float:right;
+.rightnav {
+    float: right;
 }
 
-a{
-    color:#fff;
-    border-radius:15px;
+a {
+    color: #fff;
+    border-radius: 15px;
 }
 
-.rightnav a:hover{
+.rightnav a:hover {
     background-color: lightslategray;
 }
 
-.github{
-    color:#32de84;
-    font-weight:bold;
-    font-size:20px;;
-    display:flex;
-    justify-content:center;
-    max-width:100px;
-    padding:20px;
-    position: absolute;
-    left:40%;
-}
-
-.github:hover{
-    background-color:#32de84;
-    color:white;
-}
-
-.textInfo{
-    position:absolute;
-    top:35%;
-    left:10%;
-    margin-right:200px;
-}
-
-.imageInfo{
-    position:absolute;
-    top:25%;
-    left:65%;
-}
-
-.textInfo h1{
-    font-size:75px;
-}
-
-.textInfo h2{
-    display:flex;
+.github {
+    background-color: #32de84;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
     justify-content: center;
-    margin-top:20px;
-    margin-bottom:20px;
+    max-width: 100px;
+    padding: 20px;
+    position: absolute;
+    left: 40%;
+    text-decoration: none;
+}
+
+.github:hover {
+    background-color: aquamarine;
+    color: cadetblue;
+}
+
+.textInfo {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    margin-right: 200px;
+    background-color: gray;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 90px;
+    padding-top: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.imageInfo {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.textInfo h1 {
+    font-size: 75px;
+}
+
+.textInfo h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .textInfo {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .imageInfo {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+    }
 }
