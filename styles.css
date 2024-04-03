@@ -43,3 +43,9 @@ a {
 .rightnav a:hover {
     background-color: lightslategray;
 }
+
+.profilePhoto{
+    background-color: gray;
+    padding:50px;
+    
+}
