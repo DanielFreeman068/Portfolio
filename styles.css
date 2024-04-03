@@ -2,50 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:serif;
+    color:white;
 }
 
-body {
-    font-family: Georgia, Avenir, and Avenir Light;
-    background-image: url("349021.webp");
+html{
+    font-family:Georgia, Avenir and Avenir Light; 
+    background-image: url("./349021.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin: 0;
-    padding: 0; */
 }
 
-.topnav {
-    background-color: #100c08;
-    overflow: hidden;
-    padding-top: 5px;
+.topnav{
+    background-color:#100c08;
+    overflow:hidden;
+    padding-top:5px;
 }
 
-.topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.topnav a{
+    float:left;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
 }
 
-.navbarImage {
-    height: 40px;
-    width: auto;
+.navbarImage{
+    height:40px;
+    width:auto;
 }
 
-.rightnav {
-    float: right;
+.rightnav{
+    float:right;
 }
 
-a {
-    color: #fff;
-    border-radius: 15px;
+a{
+    color:#fff;
+    border-radius:15px;
 }
 
-.rightnav a:hover {
+.rightnav a:hover{
     background-color: lightslategray;
 }
 
-.profilePhoto{
-    background-color: gray;
-    padding:50px;
-    
+.profile{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-left:2rem;
+    margin-right:2rem;
+}
+
+.profile img{
+    height:400px;
+    width:auto;
+    border-radius: 25%;
+}
+
+.profileContent h1{
+    font-size:80px;
+}
+
+.profileContent{
+    margin-left:1rem;
+}
+
+.profileContent h2{
+    font-size:40px;
 }
