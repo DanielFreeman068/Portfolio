@@ -2,6 +2,56 @@
     font-family: Roxbowow;
     src: url(./Roxborough\ CF.ttf);
 }
+.css-typing p {
+    z-index: 5;
+    font-weight:100;
+    position:absolute;
+    top:0;
+    left:6rem;
+    color:white;
+    border-right: .15em solid orange;
+    font-family: "Courier";
+    font-size: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 8.5em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+    }
+    @-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}
 
 /* navbar */
 .topnav{
@@ -11,8 +61,13 @@
     position:absolute;
     top:0;
     width:100%;
+    margin-bottom:3rem;
+    padding-bottom:15px;
+    padding-top:25px;
 }
 .topnav a{
+    font-size:20px;
+    margin-right:2rem;
     float:left;
     text-align:center;
     padding:14px 16px;
@@ -20,7 +75,7 @@
     font-family: Roxbowow;
 }
 .navbarImage{
-    height:40px;
+    height:60px;
     width:auto;
 }
 .rightnav{
@@ -48,6 +103,8 @@ body {
 }
 
 .game {
+    position:absolute;
+    top:15%;
     width: 90%;
     max-width: 960px;
     margin: auto;

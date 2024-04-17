@@ -7,21 +7,20 @@
 .topnav{
     background-color:#100c08;
     overflow:hidden;
-    padding-top:5px;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
+    padding-top:25px;
+    padding-bottom:15px;
+    margin-bottom:3rem;
 }
 .topnav a{
+    margin-right:2rem;
+    font-size:20px;
     float:left;
     text-align:center;
     padding:14px 16px;
     text-decoration:none;
-    font-family: Roxbowow;
 }
 .navbarImage{
-    height:40px;
+    height:60px;
     width:auto;
 }
 .rightnav{
@@ -36,6 +35,55 @@ a{
 }
 html{
     margin:0;
+}
+.css-typing p {
+    font-weight:100;
+    position:absolute;
+    top:0;
+    left:6rem;
+    color:white;
+    border-right: .15em solid orange;
+    font-family: "Courier";
+    font-size: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 8.5em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+    }
+    @-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
 }
 
 
@@ -67,6 +115,7 @@ html{
 }
 
 body{
+    margin:0;
     background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
 }
 
