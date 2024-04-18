@@ -20,16 +20,18 @@
             <a href="./projects.html">My Work</a>
         </div>
     </div>
-    <div class="projects">
-        <h1 class="projectsHeader">My Projects</h1>
-        <figure class="icon-cards mt-3">
-            <div class="icon-cards__content">
-                <div class="icon-cards__item d-flex align-items-center justify-content-center"><a href="./tictactoe.html"><img class="images" src="./tictactoeImage.png" alt="Tic Tac Toe"></a></div>
-                <div class="icon-cards__item d-flex align-items-center justify-content-center"><a href="./cardmemory.html"><img  class="images" src="./cardmemoryImage.png" alt="Card Memory"></a></div>
-                <div class="icon-cards__item d-flex align-items-center justify-content-center"><a href="./photogallery.html"><img class="images" src="./photogalleryImage.png" alt="Photo Gallery"></a></div>
+    <div class="containerProjects">
+        <div class="carousel">
+            <div class="carousel__face" style="background-image: url('./tictactoeImage.png'); transform: rotateY(0deg) translateZ(430px);">
             </div>
-        </figure>
+            <div class="carousel__face" style="background-image: url('./cardmemoryImage.png'); transform: rotateY(90deg) translateZ(430px);">
+            </div>
+            <div class="carousel__face" style="background-image: url('./photogalleryImage.png'); transform: rotateY(180deg) translateZ(430px);">
+            </div>
+            <div class="carousel__face" style="background-image: url('https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); transform: rotateY(270deg) translateZ(430px);">
+            </div>
+        </div>
     </div>
-    <script rel="projects.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>

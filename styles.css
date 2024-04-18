@@ -33,7 +33,8 @@ body {
     width: 150px;
     height: 150px;
     background-color: palevioletred;
-    -webkit-animation: squareToCircle2 2s 1s infinite alternate;
+    animation: squareToCircle 3s 1s infinite alternate;
+    -webkit-animation: squareToCircle2 3s 1s infinite alternate;
 }
 .loader2 {
     opacity: .5;
@@ -43,60 +44,115 @@ body {
     width: 100px;
     height: 100px;
     background-color: palevioletred;
-    -webkit-animation: squareToCircle 2s 1s infinite alternate;
+    animation: squareToCircle 3s 1s infinite alternate;
+    -webkit-animation: squareToCircle 3s 1s infinite alternate;
 }
 @-webkit-keyframes squareToCircle {
     0% {
-    border-radius: 0 0 0 0;
-    background: plum;
-    transform: rotate(0deg);
+        border-radius: 0 0 0 0;
+        background: plum;
+        transform: rotate(0deg);
     }
     25% {
-    border-radius: 50% 0 0 0;
-    background: powderblue;
-    transform: rotate(45deg);
+        border-radius: 50% 0 0 0;
+        background: powderblue;
+        transform: rotate(45deg);
     }
     50% {
-    border-radius: 50% 50% 0 0;
-    background: pink;
-    transform: rotate(90deg);
+        border-radius: 50% 50% 0 0;
+        background: pink;
+        transform: rotate(90deg);
     }
     75% {
-    border-radius: 50% 50% 50% 0;
-    background:#EE82EE;
-    transform: rotate(135deg);
+        border-radius: 50% 50% 50% 0;
+        background:#EE82EE;
+        transform: rotate(135deg);
     }
     100% {
-    border-radius: 50% 50% 50% 50%;
-    background:purple;
-    transform: rotate(180deg);
+        border-radius: 50% 50% 50% 50%;
+        background:purple;
+        transform: rotate(180deg);
+    }
+}
+@keyframes squareToCircle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: plum;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background: powderblue;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: pink;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background:#EE82EE;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        background:purple;
+        transform: rotate(180deg);
     }
 }
 @-webkit-keyframes squareToCircle2 {
     0% {
-    border-radius: 0 0 0 0;
-    background: purple;
-    transform: rotate(0deg);
+        border-radius: 0 0 0 0;
+        background: purple;
+        transform: rotate(0deg);
     }
     25% {
-    border-radius: 50% 0 0 0;
-    background: #EE82EE;
-    transform: rotate(-45deg);
+        border-radius: 50% 0 0 0;
+        background: #EE82EE;
+        transform: rotate(-45deg);
     }
     50% {
-    border-radius: 50% 50% 0 0;
-    background: pink;
-    transform: rotate(-90deg);
+        border-radius: 50% 50% 0 0;
+        background: pink;
+        transform: rotate(-90deg);
     }
     75% {
-    border-radius: 50% 50% 50% 0;
-    background: powderblue;
-    transform: rotate(-135deg);
+        border-radius: 50% 50% 50% 0;
+        background: powderblue;
+        transform: rotate(-135deg);
     }
     100% {
-    border-radius: 50% 50% 50% 50%;
-    background:plum;
-    transform: rotate(-180deg);
+        border-radius: 50% 50% 50% 50%;
+        background:plum;
+        transform: rotate(-180deg);
+    }
+}
+@keyframes squareToCircle2 {
+    0% {
+        border-radius: 0 0 0 0;
+        background: plum;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background: powderblue;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: pink;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background:#EE82EE;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        background:purple;
+        transform: rotate(180deg);
     }
 }
 .css-typing p {
@@ -354,80 +410,40 @@ li{
     font-size:25px;
 }
 
-/* Cards Carousel */
-.icon-cards {
-    position: relative;
-    width: 60vw;
-    height: 40vw;
-    max-width: 420px;
-    max-height: 290px;
-    margin: 0;
-    color: white;
-    perspective: 1000px;
-    transform-origin: center;
-}
 
-/* This is the element that rotates with the animation */
-.icon-cards__content {
+
+/* carousel */
+.containerProjects {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+.carousel {
     position: absolute;
     width: 100%;
     height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: translateZ(-30vw) rotateY(0);
-    animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
 }
-.icon-cards__content.step-animation {
-    animation: carousel 8s infinite steps(1) forwards;
-}
-
-/* Individual cards */
-.icon-cards__item {
+.carousel__face { 
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 60vw;
-    height: 40vw;
-    max-width: 380px;
-    max-height: 250px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    transform-origin: center;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    border:5px solid black;
+    display: flex;
 }
-.icon-cards__item:nth-child(1) {
-    transform: rotateY(0) translateZ(35vw);
-}
-.icon-cards__item:nth-child(2) {
-    transform: rotateY(120deg) translateZ(35vw);
-}
-.icon-cards__item:nth-child(3) {
-    transform: rotateY(240deg) translateZ(35vw);
-}
-.icon-cards__item .first{
-    margin-left:3rem;
-    margin-top:5rem;
-    color:white;
-}
-.icon-cards__item .second{
-    margin-left:2rem;
-    margin-top:5rem;
-    color:white;
-}
-.icon-cards__item .third{
-    margin-left:2rem;
-    margin-top:5rem;
-    color:white;
-}
-
-
-/* Carousel animation */
-@keyframes carousel {
-    0%, 17.5% { transform: translateZ(-35vw) rotateY(0); }
-    27.5%, 45% { transform: translateZ(-35vw) rotateY(-120deg); }
-    55%, 72.5% { transform: translateZ(-35vw) rotateY(-240deg); }
-    82.5%, 100% { transform: translateZ(-35vw) rotateY(-360deg); }
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
 }
 
 
@@ -465,7 +481,9 @@ li{
     65% { transform: scale(0.95, 1.05); }
     75% { transform: scale(1.05, 0.95); }
     to { transform: scale(1, 1); }
-}  
+}
+
+
 /* footer content */
 section h3{ 
     font-weight: 100;
