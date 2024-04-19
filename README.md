@@ -8,6 +8,8 @@ Tic Tac Toe Game - A simple Tic Tac Toe game implemented in HTML, CSS, and JavaS
 
 Responsive Photo Gallery - A responsive photo gallery that adapts to different screen sizes, providing an optimal viewing experience across devices. This project highlights my expertise in creating visually appealing and user-friendly web designs.
 
+Calculator - A simplistic designed calculator which displays uses of HTMl, CSS, and JavaScript. This project shows my abilites in JavaScript and a good UI design
+
 Technologies Used
 HTML
 CSS
