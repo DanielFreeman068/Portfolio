@@ -411,12 +411,11 @@ li{
 }
 
 
-
-/* carousel */
+/* projects page with carousel */
 .containerProjects {
     position: relative;
     width: 320px;
-    margin: 100px auto 0 auto;
+    margin: 25px auto 0 auto;
     perspective: 1000px;
 }
 .carousel {
@@ -425,6 +424,9 @@ li{
     height: 100%;
     transform-style: preserve-3d; 
     animation: rotate360 60s infinite forwards linear;
+}
+.carouselHover{
+    animation-play-state: paused;
 }
 .carousel__face { 
     position: absolute;
@@ -445,42 +447,42 @@ li{
         transform: rotateY(-360deg);
     }
 }
-
-
-/* projects placement */
-.projects {
-    margin-top:15rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+/* Add this style for the project info box */
+.project-info {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    height:300px;
+    background-color: #231645;
+    border-radius: 25px;
+    border:black 3px solid;
+    z-index: 100;
 }
-.projects h1{
-    position:absolute;
-    top:10%;
-    font-size:50px;
-}
-.images{
-    height:250px;
-    width:380px;
-    border:10px black solid;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-}
-.projects .projectsHeader{
+.project-info h1 {
+    color:white;
     margin-top:2rem;
-    font-size:60px;
+    margin-bottom:2rem;
+    text-align: center;
 }
-
-/* Jelly checkbox animation */
-@keyframes jelly {
-    from { transform: scale(1, 1); }
-    30% { transform: scale(1.25, 0.75); }
-    40% { transform: scale(0.75, 1.25); }
-    50% { transform: scale(1.15, 0.85); }
-    65% { transform: scale(0.95, 1.05); }
-    75% { transform: scale(1.05, 0.95); }
-    to { transform: scale(1, 1); }
+.project-info .gallery{
+    font-size:14px;
+}
+.project-info:hover{
+    display:block;
+}
+.languages{
+    margin-top:2rem;
+}
+.languages img{
+    height:100px;
+    width:100px;
+}
+.magic{
+    display: block;
 }
 
 
