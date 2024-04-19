@@ -448,6 +448,13 @@ li{
     }
 }
 /* Add this style for the project info box */
+#box {
+    display: none; /* Initially hidden */
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 20px;
+}
 .project-info {
     text-align: center;
     display: none;
@@ -473,9 +480,6 @@ li{
 }
 .project-info .gallery{
     font-size:14px;
-}
-.project-info:hover{
-    display:block;
 }
 .languages{
     margin-top:2rem;
