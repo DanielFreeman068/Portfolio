@@ -244,7 +244,7 @@ a{
 .profile img {
     margin-right: 3rem;
     height: 500px;
-    width: auto;
+    width: 339.72;
     border-radius: 25%;
     border: 10px black solid;
     box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.75);
@@ -452,7 +452,7 @@ li{
     text-align: center;
     display: none;
     position: absolute;
-    top: 80%;
+    top: 45rem;
     left: 50%;
     transform: translate(-50%, -50%);
     width:400px;
@@ -467,6 +467,9 @@ li{
     margin-top:2rem;
     margin-bottom:2rem;
     text-align: center;
+}
+.project-info a:hover{
+    color:lightblue;
 }
 .project-info .gallery{
     font-size:14px;
