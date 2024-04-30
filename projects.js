@@ -34,4 +34,10 @@ $(document).ready(function(){
     $("#quatro").mouseleave(function(){
         $("#quatro").slideUp(1000); // Slide up when mouse leaves
     });
+    $("#five").mouseenter(function(){
+        $("#cinco").slideDown(1000).setTimeout(5000).slideUp(1000); // Slide down when mouse enters
+    });
+    $("#cinco").mouseleave(function(){
+        $("#cinco").slideUp(1000); // Slide up when mouse leaves
+    });
 });
